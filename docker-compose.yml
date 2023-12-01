@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  gophish:
+    image: gophish/gophish:latest
+    container_name: gophish
+    ports:
+      - "3333:3333"
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./gophish-data:/config
+    restart: always
