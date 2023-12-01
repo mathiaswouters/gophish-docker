@@ -10,4 +10,4 @@ services:
       #- "443:443"
     volumes:
       - ./gophish-data:/config
-    restart: always
+    #restart: always
